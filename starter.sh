@@ -76,5 +76,6 @@ echo; sleep 4
 sudo apt-get update && sudo apt-get upgrade -y
 echo "$EDITOR=/usr/bin/nano" >> $HOME/.bashrc
 source $HOME/.bashrc
-sudo apt-get install tmux tmuxinator
-tmux new-session -d -s "Start2" $HOME/start.sh
+sudo apt-get install tmux tmuxinator git
+git clone http://github.com/abraxas678/start3.git
+tmux new-session -d -s "Start2" $HOME/start3/start.sh
